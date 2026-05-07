@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--25ВП1, Игумнова В.В., 10 вариант, л.р.№5-->
+<html>
+    <head>
+        <title>Цензура</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles5.css">
+        <link rel="icon" href="#">
+    </head>
+    <body>
+        <div class="head">
+            <h3>Лабораторная работа №5</h3>
+            <p><strong>Студент:</strong> Игумнова В.В.</p>
+            <p><strong>Вариант:</strong> 10</p>
+        </div>
+        <div class="task">
+            <h3>Задание: </h3>
+            <p>Пользователь вводит в одном текстовом поле сообщение, а во втором
+            запрещенные слова. При нажатии на кнопке «Цензура» все запрещенные 
+            слова в сообщении должны быть скрыты за красными прямоугольниками, 
+            которые появляются последовательно, по ходу текста, меняя свою 
+            прозрачность от 100% до 0%.
+            </p>
+        </div>
+        
+        <h1>Введите текст и запрещённые слова</h1>
+        
+        <div class="text-blocks-wrapper">
+            <div class="text-block">
+                <label for="left-input">Блок с сообщением</label>
+                <textarea 
+                    id="left-input" 
+                    class="text-input" 
+                    placeholder="Введите текст..."
+                ></textarea>
+            </div>
+
+            <div class="text-block">
+                <label for="right-input">Блок с запрещёнными словами</label>
+                <textarea 
+                    id="right-input" 
+                    class="text-input" 
+                    placeholder="Введите слова через запятую..."
+                ></textarea>
+            </div>
+        </div>
+        
+        <div class="button-wrapper">
+            <button class="censor-btn" id="censor-btn">Цензура</button>
+        </div>
+        
+        <div class="result-wrapper">
+            <h2>Отцензурированный текст</h2>
+            <div id="result-box" class="result-box">
+                <span id="result-text">Здесь появится результат...</span>
+            </div>
+        </div>
+
+        <script src="js/lib/jquery-4.0.0.min.js"></script>
+        <script src="js/javascript5.js"></script>
+    </body>
+</html>
