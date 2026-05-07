@@ -1,0 +1,134 @@
+.head {
+   background-image: url('../images/Grey.jpg');  
+   background-repeat: repeat;
+   padding: 20px;         
+   margin: 30px;          
+   border-radius: 10px;    
+   color: white;           
+   text-shadow: 1px 1px 2px black;
+}
+
+body {
+   background-color: #e0e0e0; 
+    background-image: url('../images/fon.jpg');
+    background-repeat: repeat;
+}
+
+.task {
+   background-image: url('../images/Grey.jpg');  
+   background-repeat: repeat; 
+   padding: 20px;         
+   margin: 30px;           
+   border-radius: 10px;    
+   color: white;           
+   text-shadow: 1px 1px 2px black;  
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.text-blocks-wrapper {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-block {
+    flex: 1 1 300px;         
+    min-width: 0;
+}
+
+.text-block label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ===== ПОЛЯ ВВОДА ===== */
+.text-input {
+    width: 91%;
+    height: 300px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.censor-btn {
+    padding: 16px 48px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+    border: 2px solid #cccccc;
+    border-radius: 50px;
+    
+    outline: none;
+    cursor: pointer;
+    
+    box-shadow: 0 6px 0 #bbbbbb,
+                0 8px 20px rgba(0, 0, 0, 0.15);
+    
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.result-wrapper {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-box {
+    min-height: 150px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+#result-text {
+    display: inline;
+}
+
+.censor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+
